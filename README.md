@@ -5,7 +5,7 @@ Sprint covering the full Python visualization stack — from raw database connec
 
 ## Notebook 1 — MySQL Connection
 
-**File:** [`nivel1_mysql_connection.ipynb`](nivel1_mysql_connection.ipynb)
+**File:** [`nivel1_mysql_connection.ipynb`](data/nivel1_mysql_connection.ipynb)
 
 Before any visualization can happen, data needs to move. This notebook establishes the Python-to-MySQL pipeline using `mysql-connector-python`, covering connection management, cursor-based queries, and the more practical `pd.read_sql()` pattern for loading query results directly into a DataFrame.
 
@@ -17,7 +17,7 @@ Connection hygiene is non-negotiable. Leaving database connections open in long-
 
 ## Notebook 2 — Matplotlib
 
-**File:** [`nivel2_matplotlib.ipynb`](nivel2_matplotlib.ipynb)
+**File:** [`nivel2_matplotlib.ipynb`](data/nivel2_matplotlib.ipynb)
 
 
 Matplotlib is the foundation of Python visualization: verbose by design, but offering complete control over every element of a chart. The core mental model is the separation between `fig` (the canvas) and `ax` (the coordinate system where data is actually plotted). Every customization — titles, labels, colors, tick formatting — operates on the `ax` object, which makes multi-plot layouts predictable and composable.
@@ -32,7 +32,7 @@ The scatter plot included a `axhline` break-even reference, a pattern that recur
 
 ## Notebook 3 — Seaborn
 
-**File:** [`nivel3_seaborn.ipynb`](nivel3_seaborn.ipynb)
+**File:** [`nivel3_seaborn.ipynb`](data/nivel3_seaborn.ipynb)
 
 
 Seaborn sits on top of Matplotlib but shifts the focus from rendering mechanics to statistical insight. Where Matplotlib requires explicit setup for every visual element, Seaborn infers sensible defaults and builds statistical context directly into the chart type.
@@ -49,7 +49,7 @@ Seaborn is the right tool during exploratory analysis: fast to write, statistica
 
 ## Notebook 4 — Plotly
 
-**File:** [`nivel4_plotly.ipynb`](nivel4_plotly.ipynb)
+**File:** [`nivel4_plotly.ipynb`](data/nivel4_plotly.ipynb)
 
 
 Plotly changes the question from "what does this chart show?" to "what can the user do with this chart?" Every chart produced with Plotly Express is interactive by default — hover tooltips, zoom, pan, and click-to-filter require no additional configuration.
@@ -64,7 +64,7 @@ A treemap is useful specifically when the data has a meaningful hierarchy and re
 
 ## Notebook 5 — Power BI & Python Integration
 
-**File:** [`nivel5_powerbi_python.ipynb`](nivel5_powerbi_python.ipynb)
+**File:** [`nivel5_powerbi_python.ipynb`](data/nivel5_powerbi_python.ipynb)
 
 
 The final notebook bridges Python and Power BI, demonstrating two distinct integration patterns that serve different purposes in a production workflow.
